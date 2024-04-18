@@ -7,11 +7,33 @@
 
 import SwiftUI
 
+enum CurrentView {
+    case signIn, content
+}
+
+struct SignIn: View {
+    @Binding var state: CurrentView
+        Button {
+            state = .content
+        } label: {
+            Text("Sign In")
+        }
+    }
+}
+
+
 @main
 struct Boutique_Retain_CycleApp: App {
+    @State var state: CurrentView = .signIn
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            switch state {
+            case .content:
+                ContentView(state: $state)
+            case .signIn:
+                SignIn(state: $state)
+            }
         }
     }
 }
