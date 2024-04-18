@@ -11,6 +11,7 @@
 		14CD73902BD182C800453C4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD738F2BD182C800453C4A /* ContentView.swift */; };
 		14CD73922BD182CD00453C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CD73912BD182CD00453C4A /* Assets.xcassets */; };
 		14CD73952BD182CD00453C4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CD73942BD182CD00453C4A /* Preview Assets.xcassets */; };
+		14CD739D2BD1832300453C4A /* Boutique in Frameworks */ = {isa = PBXBuildFile; productRef = 14CD739C2BD1832300453C4A /* Boutique */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CD739D2BD1832300453C4A /* Boutique in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Boutique Retain Cycle";
+			packageProductDependencies = (
+				14CD739C2BD1832300453C4A /* Boutique */,
+			);
 			productName = "Boutique Retain Cycle";
 			productReference = 14CD738A2BD182C800453C4A /* Boutique Retain Cycle.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 14CD73812BD182C800453C4A;
+			packageReferences = (
+				14CD739B2BD1832300453C4A /* XCRemoteSwiftPackageReference "Boutique" */,
+			);
 			productRefGroup = 14CD738B2BD182C800453C4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14CD739B2BD1832300453C4A /* XCRemoteSwiftPackageReference "Boutique" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mergesort/Boutique.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14CD739C2BD1832300453C4A /* Boutique */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14CD739B2BD1832300453C4A /* XCRemoteSwiftPackageReference "Boutique" */;
+			productName = Boutique;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14CD73822BD182C800453C4A /* Project object */;
 }

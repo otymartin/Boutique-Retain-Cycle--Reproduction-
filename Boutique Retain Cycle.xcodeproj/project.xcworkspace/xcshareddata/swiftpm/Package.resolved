@@ -1,0 +1,42 @@
+{
+  "originHash" : "80d46e9e78c2ed78884a15d71acb38e86017400293de356129e320c940435fc4",
+  "pins" : [
+    {
+      "identity" : "bodega",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mergesort/Bodega.git",
+      "state" : {
+        "revision" : "f0554077c178088ba11557bbdbb71775cc6a1b84",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "boutique",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mergesort/Boutique.git",
+      "state" : {
+        "revision" : "f48a08788d7500c255bd28ed625533cbf39c0bb6",
+        "version" : "2.4.3"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift.git",
+      "state" : {
+        "revision" : "e5e833921a8f98870e547e428df017c266cd98f2",
+        "version" : "0.15.2"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections",
+      "state" : {
+        "revision" : "94cf62b3ba8d4bed62680a282d4c25f9c63c2efb",
+        "version" : "1.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
